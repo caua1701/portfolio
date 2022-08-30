@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins&display=swap');
+
+:root {
+  --cor-cinza: #0b1d21;
+  --cor-verde: #68baab;
+  --cor-verde-claro: #e0eff1;
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--cor-verde);
+}
+
+header {
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 1.6rem;
+  background-color: var(--cor-cinza);
+  font-size: 1.4em;
+
+}
+
+nav {
+  display: flex;
+  width: 70%;
+  justify-content: space-between;
+  margin: auto;
+
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+}
+
+#info {
+  width: 70%;
+  margin: auto;
+  padding-top: 50px;
+  text-align: center;
+  color: white;
+  font-size: 1.5em;
+}
+
+#eu {
+  display: block;
+  margin: auto;
+  margin-bottom: 30px;
+  min-width: 10rem;
+  max-width: 22rem;
+  width: 30vw;
+  border-radius: 50%;
+}
+
+.redes img {
+  margin: auto;
+  margin-top: 10px;
+  margin-left: 20px;
+  width: 1.5em;
+}
+
+.container {
+  width: 90%;
+  margin: auto;
+  margin-top: 50px;
+  background-color: var(--cor-verde-claro);
+  font-size: 1.5em;
+  border-radius: 15px;
+  text-align: center;
+}
+
+.container h2 {
+  border-bottom: 2px solid black;
+  padding: 10px;
+  width: 80%;
+  margin: auto;
+}
+
+.container p {
+  margin: 0px 50px;
+}
+
+.container {
+  margin-top: 50px;
+}
+
+.projeto img {
+  margin-top: 50px;
+  margin-bottom: 20px;
+  width: 80%;
+}
+
+.projeto button {
+  margin: 1.2em 0px;
+  width: 80%;
+  border: none;
+  border-radius: 15px;
+  background-color: var(--cor-verde);
+  padding: 15px;
+  font-size: 1em;
+  color: white;
+  cursor: pointer;
+}
+
+.projeto button:hover {
+  background-color: var(--cor-cinza);
+}
+
+#sobre-mim p {
+  text-align: left;
+  padding: 50px;
+}
+
+footer {
+  font-size: 2em;
+  text-align: center;
+  padding: 2rem;
+}
+
+@media screen and (max-width:700px) {
+  header {
+    padding: 0.5rem;
+    position: relative;
+  }
+
+  nav {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  nav a {
+    margin-top: 10px;
+  }
+
+  #info {
+    font-size: 1.2em;
+  }
+
+  #sobre-mim {
+    font-size: 1.3em;
+  }
+
+  #sobre-mim p {
+    width: 100%;
+    margin: auto;
+  }
+
+  .container {
+    font-size: 1.3em;
+  }
+}
